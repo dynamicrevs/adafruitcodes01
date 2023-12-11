@@ -1,16 +1,16 @@
-Int trigpin=2;
-Int echopin=3;
+int trigpin=2;
+int echopin=3;
 long duration;
 int distance;
 int BUZZER=10;
-voidsetup()
+void setup()
 {
 pinMode(trigpin,OUTPUT);
 pinMode(echopin,INPUT);
 pinMode(BUZZER,OUTPUT);
 Serial.begin(9600);
 }
-voidloop()
+void loop()
 {
 digitalWrite(trigpin,LOW);
 delayMicroseconds(3);
