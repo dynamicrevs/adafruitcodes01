@@ -24,14 +24,14 @@ distance=duration*0.034/2;
 Serial.print("DISTANCE IN CM");
 Serial.println(distance); if((distance<=10))
 digitalWrite(BUZZER,HIGH);
-elseif((distance>10)&&(distance<=50))
+else if((distance>10)&&(distance<=50))
 {
 digitalWrite(BUZZER,HIGH);
 delay(100);
 digitalWrite(BUZZER,LOW);
 delay(100);
 }
-elseif((distance>50)&&(distance<=200))
+else if((distance>50)&&(distance<=200))
 { digitalWrite(BUZZER,HIGH);
 delay(500);
 digitalWrite(BUZZER,LOW);
